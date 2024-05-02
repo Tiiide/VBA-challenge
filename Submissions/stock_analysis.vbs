@@ -133,3 +133,18 @@ Sub stock_analysis()
     MsgBox ("Calculations Complete")
 
 End Sub
+
+
+Sub Reset()
+
+    Dim ws As Worksheet
+    
+    For Each ws In Worksheets
+
+        ws.Cells(1, 9).CurrentRegion.Clear
+        ws.Cells(1, 15).CurrentRegion.Clear
+    
+    Next ws
+
+End Sub
+
